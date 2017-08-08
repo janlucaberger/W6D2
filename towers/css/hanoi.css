@@ -1,0 +1,51 @@
+ul {
+  margin: 10px;
+  list-style: none;
+
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 10px solid black;
+}
+ul:hover{
+  border-bottom-color: blue;
+}
+
+.selected{
+  border-bottom-color: red;
+}
+
+.hanoi{
+  display: flex;
+  /*background: red;*/
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  background-color: gray;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.disk1{
+  width: 60px;
+
+}
+.disk2{
+  width: 100px;
+
+}
+.disk3{
+  width: 180px;
+
+}
+
+.winningGame{
+  background-color: green;
+}
