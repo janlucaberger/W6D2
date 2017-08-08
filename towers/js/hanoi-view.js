@@ -35,7 +35,7 @@ class View {
     $("ul").each((idx, tower) => {
       const $tower = $(tower);
       const $towerIdx = idx;
-      for (var i = this.game.towers[parseInt($towerIdx)].length - 1; i >= 0; i--) {
+      for (var i = this.game.towers[idx].length - 1; i >= 0; i--) {
         const $disk = $("<li>")
           .addClass(`disk${this.game.towers[idx][i]}`);
         $tower.append($disk);
@@ -60,7 +60,7 @@ class View {
       $tower.addClass("selected");
       moves.push(parseInt(pos));
 
-    } else if (moves.length === 1) {
+    } else {
       // debugger
       moves.push(parseInt(pos));
       this.game.move(moves[0], moves[1]);
